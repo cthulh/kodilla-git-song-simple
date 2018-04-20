@@ -55,7 +55,7 @@ p {
 @media (max-width:670px) {
   .flex-container .card-panel {
     width: 90%;
-    height: 90%;
+    height: 75%;
     padding: 1vw;
   }
   h1 {
