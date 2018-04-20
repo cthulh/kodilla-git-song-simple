@@ -27,9 +27,40 @@ body {
 }
 
 h1 {
+  font-size: 3rem;
   font-family: Bitter;
 }
 
 h1::first-line {
   font-size: 1.5em;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+@media (max-width:999px) {
+  .flex-container .card-panel {
+    width: 70%;
+    padding: 1.5vw;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:670px) {
+  .flex-container .card-panel {
+    width: 90%;
+    padding: 1vw;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
 }
