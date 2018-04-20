@@ -29,3 +29,7 @@ body {
 h1 {
   font-family: Bitter;
 }
+
+h1::first-line {
+  font-size: 1.5em;
+}
