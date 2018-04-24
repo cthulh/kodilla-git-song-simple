@@ -1,0 +1,7 @@
+1. autoprefixer-cli ma czytać z pliku style.css i zapisywać wynik do pliku style.prefixed.css
+
+node_modules/.bin/autoprefixer-cli style.css -o "style.prefixed.css"
+
+2. u-html-checker ma wyświetlać listę błędów we wszystkich plikach .html
+
+node_modules/.bin/nu-html-checker *.html
