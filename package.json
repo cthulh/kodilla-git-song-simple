@@ -11,10 +11,12 @@
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
     "build": "npm-run-all build:* test",
+    "build:clean":"rimraf css/*.css",
     "build:sass": "node-sass --output-style expanded -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "build-dev:sass": "node-sass --output-style expanded --source-map true -o css sass",
-    "watch": "onchange sass/style.scss -- npm-run-all build*"
+    "watch": "onchange sass/style.scss -- npm-run-all build watch:*",
+    "watch:browsersync":"browser-sync start --server"
   },
   "keywords": [],
   "author": "",
