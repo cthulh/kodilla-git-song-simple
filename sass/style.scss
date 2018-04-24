@@ -7,6 +7,7 @@ html {
 body {
   height: 100%;
   margin: 0;
+  font-size: 12px;
 }
 
 .flex-container {
@@ -25,6 +26,11 @@ body {
     padding: 3vw;
     font-family: Anton;
   }
+}
+
+.test {
+  display: flex;
+  justify-content: center;
 }
 
 h1 {

@@ -6,6 +6,7 @@ html {
 body {
   height: 100%;
   margin: 0;
+  font-size: 12px;
 }
 
 .flex-container {
@@ -25,6 +26,13 @@ body {
   width: 50%;
   padding: 3vw;
   font-family: Anton;
+}
+
+.test {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 h1 {
@@ -66,5 +74,3 @@ p {
     font-size: 0.9rem;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
