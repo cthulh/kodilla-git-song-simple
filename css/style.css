@@ -1,67 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Anton|Bitter');
+@import url("https://fonts.googleapis.com/css?family=Anton|Bitter");
+html { height: 100%; }
 
-html, body {
-    height: 100%;
-}
-body {
-    margin: 0;
-}
-.flex-container {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+body { height: 100%; margin: 0; }
 
-.flex-container .card-panel {
-  width: 50%;
-  padding: 3vw;
-  font-family: Anton;
-}
+.flex-container { height: 100%; width: 100%; padding: 0; margin: 0; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }
 
-h1 {
-  font-size: 3rem;
-  font-family: Bitter;
-}
+.flex-container .card-panel { width: 50%; padding: 3vw; font-family: Anton; }
 
-h1::first-line {
-  font-size: 1.5em;
-}
+h1 { font-size: 3rem; font-family: Bitter; }
 
-p {
-  font-size: 1.1rem;
-}
+h1::first-line { font-size: 1.5em; }
 
-@media (max-width:999px) {
-  .flex-container .card-panel {
-    width: 70%;
-    padding: 1.5vw;
-  }
-  h1 {
-    font-size: 2.5rem;
-  }
-  p {
-    font-size: 1rem;
-  }
-}
+p { font-size: 1.1rem; }
 
-@media (max-width:670px) {
-  .flex-container .card-panel {
-    width: 90%;
-    height: 80%;
-    padding: 1vw;
-  }
-  h1 {
-    font-size: 2rem;
-  }
-  p {
-    font-size: 0.9rem;
-  }
-}
+@media (max-width: 999px) { .flex-container .card-panel { width: 70%; padding: 1.5vw; }
+  h1 { font-size: 2.5rem; }
+  p { font-size: 1rem; } }
+
+@media (max-width: 670px) { .flex-container .card-panel { width: 90%; height: 80%; padding: 1vw; }
+  h1 { font-size: 2rem; }
+  p { font-size: 0.9rem; } }
